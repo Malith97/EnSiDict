@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212F3D"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:layout_marginBottom="6dp"
+                android:layout_margin="10dp"
+                android:hint="Type your word Here"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/myUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:textColor="#ECF0F1"
+                    android:minHeight="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Translate"
+                android:layout_gravity="center"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/accountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:layout_gravity="start"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="#ECF0F1"
+                android:textSize="25dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="15dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="25dp"
+                    android:hint="Enter Word Here">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/myText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ECF0F1"
+                        android:fontFamily="@font/regular"
+                        android:minHeight="50dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- D/CS/18/0002  IAMP Ileperuma -->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
